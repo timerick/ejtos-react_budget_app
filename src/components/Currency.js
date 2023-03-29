@@ -10,14 +10,20 @@ const Currency = () => {
     }
     
   return (
-        <div className='alert alert-success'> Currency {
-      <select className='green-select' name="Currency" id="Currency" onChange={event=>changeCurrency(event.target.value)}>
-        <option value="$">$ Dollar</option>
-        <option value="£">£ Pound</option>
-        <option value="€">€ Euro</option>
-        <option value="₹">₹ Ruppee</option>
-      </select>	
-      }	
+        <div className='alert alert-success' style={{color: 'white', backgroundColor: 'limegreen' }}> Currency ({
+            <select
+            className='green-select'
+            name="Currency"
+            id="Currency"
+            onChange={event => changeCurrency(event.target.value)}
+            style={{ border: 'none', outline: 'none', backgroundColor: 'inherit' }}
+          >
+            <option value="$">$ Dollar</option>
+            <option value="£">£ Pound</option>
+            <option value="€">€ Euro</option>
+            <option value="₹">₹ Ruppee</option>
+          </select>	
+      })
     </div>
     );
 };

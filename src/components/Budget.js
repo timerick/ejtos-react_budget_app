@@ -18,6 +18,7 @@ const Budget = () => {
                 id='budget'
                 value={budget}
                 step={10}
+                
                 style={{ width: 80 }}
                 onChange={(event) => changeBudget(event.target.value)
                 }
